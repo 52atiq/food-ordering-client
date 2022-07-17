@@ -6,7 +6,8 @@ const Cart = () => {
     <div className={styles.container}>
          <div className={styles.left}>
             <table className={styles.table}>
-                <tr className={styles.tr}>
+               <tbody>
+               <tr className={styles.trTitle}>
                    <th>Product</th>
                    <th>Name</th>
                    <th>Extra</th>
@@ -15,17 +16,17 @@ const Cart = () => {
                    <th>Total</th>
                 </tr>
 
-                <tr>
+                <tr className={styles.tr}> 
                     <td>
                         <div className={styles.imgContainer}>
-                            <Image src='/img/pizza.png' layout='fill' objectFit='cover' alt=''  />
+                            <Image  src='/img/pizza.png' layout='fill' objectFit='cover' alt=''  />
                         </div>
                     </td>
                     <td>
                         <span className={styles.name}>ROKALRO</span>
                     </td>
-                    <td className={styles.extras}>
-                        <span>Double Ingredient, spicy sauce</span>
+                    <td >
+                        <span className={styles.extras}>Double Ingredient, spicy sauce</span>
                     </td>
 
                     <td>
@@ -38,7 +39,7 @@ const Cart = () => {
                         <span className={styles.total}>$39.30</span>
                     </td>
                 </tr>
-                <tr>
+                <tr className={styles.tr}>
                     <td>
                         <div className={styles.imgContainer}>
                             <Image src='/img/pizza.png' layout='fill' objectFit='cover' alt=''  />
@@ -47,8 +48,8 @@ const Cart = () => {
                     <td>
                         <span className={styles.name}>ROKALRO</span>
                     </td>
-                    <td className={styles.extras}>
-                        <span>Double Ingredient, spicy sauce</span>
+                    <td>
+                        <span className={styles.extras}>Double Ingredient, spicy sauce</span>
                     </td>
 
                     <td>
@@ -62,6 +63,7 @@ const Cart = () => {
                     </td>
                 </tr>
 
+               </tbody>
             </table>
          </div>
          <div className={styles.right}>
@@ -84,4 +86,4 @@ const Cart = () => {
   )
 }
 
-export default Cart
+export default Cart;

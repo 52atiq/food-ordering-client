@@ -29,3 +29,22 @@
 .motto{
     color: rgb(233, 211, 211);
 }
+
+@media screen and (max-width: 480px) {
+    .container{
+        text-align: center;
+        height: auto;
+    }
+    .item:first-child{
+        display: none;
+    }
+    .item{
+        flex-direction: column;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .text{
+        font-size: 18px;
+    }
+}
